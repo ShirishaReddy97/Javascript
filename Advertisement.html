@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Advertisement Estimate</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+}
+
+
+
+.navbar {
+display: flex;
+align-items: center;
+justify-content: center;
+position: sticky;
+top: 0;
+cursor: pointer;
+}
+
+
+
+.background {
+background: blue;
+background-blend-mode: darken;
+background-size: cover;
+}
+
+
+
+.nav-list {
+width: 70%;
+display: flex;
+align-items: center;
+}
+
+
+
+.logo {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.logo img {
+width: 180px;
+border-radius: 50px;
+}
+
+
+
+.nav-list li {
+list-style: none;
+padding: 26px 30px;
+}
+
+
+
+.nav-list li a {
+text-decoration: none;
+color: white;
+}
+
+
+
+.nav-list li a:hover {
+color: grey;
+}
+
+
+
+.rightnav {
+width: 30%;
+text-align: right;
+}
+
+
+
+#search {
+padding: 5px;
+font-size: 17px;
+border: 2px solid grey;
+border-radius: 9px;
+}
+</style>
+<a href="Index.html">Index</a>
+</head>
+<body style="background-color: aqua;">
+<nav class="navbar background">
+<ul class="nav-list">
+<div class="logo">
+<img src= "logo.png">
+</div>
+<li><a href="WebTeam.html">Web Technology</a></li>
+<li><a href="JavaTeam.html">JavaProgramming</a></li>
+<li><a href="Javascript.html">JavaScript</a></li>
+</ul>
+
+<div class="rightNav">
+<!-- <input type="text" name="search" id="search"> -->
+<input type="search" name="search1" id="search2">
+<!-- <button class="btn btn-sm">Search</button> -->
+</div>
+</nav>
+<h1>Advertisement Estimate</h1>
+<div class="style">
+<form name="Advertisementform" action="Thanks.html" method="get">
+
+Name/Company Name:<div class="required">
+<input type="text"><br>
+</div>
+Email:
+<div class="required">
+    <input type="email">
+</div >
+<div class="required">
+<label for="datemin">Starting Date:</label>
+  <input type="date"> 
+  </div>
+  <div class="required">
+  <label for="datemax">End Date:</label>
+  <input type="date"><br><br>
+</div>
+Advertising Size(pixels):<br>
+  <input type="radio" name="packages">
+<label for="package1">200px</label>
+<input type="radio" name="packages">
+<label for="package2">250px</label>
+<input type="radio" name="packages">
+ <label for="package3" >300px</label><br>
+ Which sites would you like to advertise on?<br>
+  <input type="checkbox">Google
+  <input type="checkbox">Facebook
+  <input type="checkbox">Twitter<br>
+  Website to be advertised<div class="required">
+    <input type="text"><br>
+    </div>
+    Comments:<br>
+    <textarea rows="10" cols="10"></textarea><br>
+ <input type="Submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
+  
